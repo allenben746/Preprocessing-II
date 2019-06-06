@@ -7,6 +7,11 @@
         display: flex;
         justify-content: space-between;
 
+        @media @mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .navAnchors {
             width: 50%;
             display: flex;
@@ -14,6 +19,13 @@
             justify-content: space-between;
             align-items: center;
             padding-right: 2%;
+
+            @media @mobile {
+                width: 100%;
+                padding-bottom: 2%;
+            }
+
+            
             a {
                 text-decoration: none;
                 color: black;
