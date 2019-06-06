@@ -104,8 +104,14 @@ nav,
 section {
   display: block;
 }
+html {
+  background: black;
+}
 body {
   line-height: 1;
+  background: pink;
+  width: 80%;
+  margin: 0 auto;
 }
 ol,
 ul {
@@ -167,6 +173,25 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navContainer {
+  width: 100%;
+}
+.navContainer nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navContainer nav .navAnchors {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2%;
+}
+.navContainer nav .navAnchors a {
+  text-decoration: none;
+  color: black;
 }
 .footer {
   width: 100%;
