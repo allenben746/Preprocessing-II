@@ -136,6 +136,15 @@
       .btn {
         .buttonMixin(green; 1; 1%;); //Para Mix In!
         text-align: center;
+
+        &:hover {
+          .keyframes(fade-in;{
+              0% { opacity: .5; }
+              100% { opacity: 1; }
+              });
+      
+          .animation(fade-in 1s linear infinite alternate);
+      }
       }
     }
   }
