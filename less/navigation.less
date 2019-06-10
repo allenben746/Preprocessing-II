@@ -1,1 +1,46 @@
 // Navigation Styles here
+.navContainer {
+     width: 100%;
+     border-bottom: dashed black .5px;;
+     
+    nav {
+        display: flex;
+        justify-content: space-between;
+        @media @tablet {
+            @media @mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .navAnchors {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 2%;
+
+            @media @mobile {
+                width: 100%;
+                padding-bottom: 2%;
+            }
+
+            
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    .keyframes(fade-in;{
+                        0% { opacity: 0.5; }
+                        100% { opacity: 1; }
+                        });
+                
+                    .animation(fade-in 1s linear infinite alternate);
+                }
+                
+            }
+        }
+    }
+}
